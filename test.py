@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 from flask import Flask,url_for,request,render_template
 import cube_result_test
 import cube_transform_test
@@ -34,4 +35,4 @@ def solvetext():
     
 if __name__ == '__main__':
     app.debug = True # 设置调试模式，生产模式的时候要关掉debug
-    app.run(port=8080)
+    app.run(host='0.0.0.0', port=8080)
